@@ -22,6 +22,11 @@ body{
     margin: 0 auto;
 }
 
+.logo-nav img{
+    width: 300px;
+}
+
+
 .hero{
     height: 100%;
     width: 100%;
@@ -505,5 +510,9 @@ hr{
 }
 
 .copyright{
+    text-align: center;
+}
+
+.footer-note{
     text-align: center;
 }
