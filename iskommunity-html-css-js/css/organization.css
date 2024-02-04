@@ -33,7 +33,7 @@ body{
 .hero{
     height: 100%;
     width: 100%;
-    min-height: 100vh;
+    min-height: 70vh;
     background: linear-gradient(to right, #ca1e18, #730000);
     position: relative;
 }
@@ -347,4 +347,150 @@ button .ri-search-line{
     color: #555;
     font-size: 25px;
     cursor: pointer;
+}
+
+/* Organization Dropdown */
+
+.select-menu{
+    width: 380px;
+    margin: 20px auto;
+}
+
+.select-menu .select-btn{
+    display: flex;
+    height: 55px;
+    background: #fff;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.select-btn i{
+    font-size: 25px;
+    color: #555;
+    transition: 0.3s;
+}
+
+.select-menu .select-btn i{
+    transform: rotate(-180deg);
+
+}
+
+.select-menu .select-options{
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.select-menu .select-options{
+    display: none;
+
+}
+
+.select-menu.active .select-options{
+    display: block;
+
+}
+
+
+.select-options .option{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+}
+
+.select-options .option:hover{
+    background: #d909096e;
+    color: #fff;
+}
+
+
+.option i{
+    font-size: 25px;
+    color: #000000;
+    margin-right: 12px;
+}
+
+.option .option-text{
+    font-size: 18px;
+    color: #000000;
+}
+
+/* Organization Cards */
+.org-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+}
+
+.card{
+    height: 300px;
+    margin: 50px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+.container .card img{
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.container .intro{
+    height: 75px;
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #730000;
+    color: #fff;
+    bottom: -200px;
+    transition: 0.5s;
+}
+
+.intro h3{
+    font-size: 22px;
+    font-weight: 800;
+    margin: 10px;
+
+}
+
+.intro p{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover .intro{
+    height: 200px;
+    bottom: -200px;
+    background: #730000d6;
+}
+
+.card:hover .intro p{
+    opacity: 1;
+    visibility: visible;
 }
