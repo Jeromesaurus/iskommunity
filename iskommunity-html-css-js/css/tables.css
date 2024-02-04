@@ -1,0 +1,242 @@
+/* CONTENT LAYOUT*/
+.content-header, .table-header, table, .content-footer, .search-create{
+    margin: 0 auto;
+    width: 90%;
+    padding: 1.3rem;
+}
+a{
+    color: blue;
+}
+
+/* CONTENT HEADER */
+.content-header{
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+/* SEARCH */
+.search-create{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .2s color, .2s background-color;
+}
+
+.search input[type=text]:focus {
+   background-color: rgb(64, 7, 7);
+   color: white;
+
+}
+
+.search input, .search button, .create-new a{
+    padding: 1rem;
+    border-radius: 9px;
+    border: 1px solid black;
+    text-decoration: none;
+    transition: .2s color, .2s background-color;
+    
+}
+
+.create-new a:hover {
+    background-color: rgb(67, 2, 2);
+    color: white;
+}
+
+.search input, .search button{
+    font-size: 1rem;
+}
+
+/* TABLE HEADER */
+.table-header{
+    border: 1px solid black;
+}
+
+.table-header-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sort-options, .sort-options-org {
+    display: flex;
+    align-items: center;
+}
+
+.sort-options p, .sort-options-org p{
+    margin-right: 1em;
+}
+
+.sort-options a{
+    border: 1px solid black;
+    padding: 0.5em;
+    margin: 0 1%;
+    width: 5em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 50px;
+    transition: color .2s, background-color .2s;
+}
+
+.sort-options a:hover {
+    background-color: rgb(104, 7, 7);
+    color: white;
+}
+
+
+
+.sort-options-org a{
+    border: 1px solid black;
+    padding: 0.5em;
+    margin: 0 .3%;
+    width: 6em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    color: black;
+    border-radius: 50px;
+    transition: color .2s, background-color .2s;
+    
+}
+
+.sort-options-org a:hover {
+    background-color: rgb(104, 7, 7);
+    color: white;
+}
+
+.sort-options .selected, .sort-options-org .selected{
+    background: rgb(0, 81, 255);
+    color: white;
+}
+
+/* MSG */
+.msg{
+    border: 1px solid seagreen;
+    background: rgba(0, 255, 72, 0.254);
+    padding: 1.3em 1em;
+    margin: 1.3em 0 0;
+    border-radius: 10px;
+}
+
+/* TABLE */
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid black;
+    text-align: center;
+    line-height: 3em;
+}
+table a{
+    text-decoration: none;
+}
+
+/* CONTENT FOOTER */
+.content-footer{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 2em;
+    padding-right: 0;
+}
+
+.pagination {
+    border-radius: 5px;
+    border: solid black 1px;
+
+    background:linear-gradient(to right, #ca1e18, #730000);
+}
+
+.pagination a{
+    color: white;
+    padding: 0 1rem;
+    text-decoration: none;
+    transition: color .2s,background-color .2s;
+}
+
+.pagination a:hover{
+    color: black;
+    background-color: whitesmoke;
+    
+}
+
+/* EDIT POST */
+.post-content{
+    padding: 1.5rem;
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 90%;
+}
+
+details{
+    margin-bottom: 1.3rem;
+}
+
+.body-input{
+    margin-bottom: 1.5rem;
+}
+
+.post-content .image-input, .image-input input{
+    /* border: 4px solid rgb(0, 94, 255); */   
+    font-size: 1rem;
+}
+
+.ck-editor__editable[role="textbox"] {
+    /* Editing area */
+    min-height: 150px;
+    max-height: 200px;
+}
+
+.buttons a{
+    padding: 1rem;
+    border-radius: 9px;
+    text-decoration: none;
+}
+
+.publish{
+    color: blue;
+    line-height: 10px;
+}
+
+.unpublish{
+    color: red;
+    line-height: 10px;
+}
+
+/* DELETE POST */
+
+.delete-post-buttons button{
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    margin: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-post-buttons .cancel{
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+}
+
+/* EDIT MEMBERSHIP */
+
+.date-membership{
+    margin-top: 1.5rem;
+}
+
+.dates{
+    display: flex;
+    gap: 2rem;
+}
+
+.url-membership input{
+    width: 100%;
+}
+
+#membershipSection{
+    display: none;
+}
