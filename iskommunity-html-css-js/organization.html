@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="css/organization.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"/>
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
 </head>
 <body>
      <!-- NavBar-->
@@ -68,41 +72,102 @@
 
         </section>
 
-        <section class="org-container">
-            <div class="container">
-                <div class="card">
-                    <img src="/iskommunity-html-css-js/img/Sample/Sample (1).png" alt="">
+        <section class="org-card">
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
 
-                    <div class="intro">
-                        <h3>Organization Name 1</h3>
-                        <p>Organization Description</p>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/iskommunity-html-css-js/img/Sample/Sample (1).png" alt="Organization">
+                            </div>
+
+                            <div class="media-icons">
+                                <i class="ri-facebook-fill"></i>
+                                <i class="ri-twitter-fill"></i>
+                                <i class="ri-instagram-fill"></i>
+                            </div>
+
+                            <div class="name-card">
+                                <span class="org-name">Organization Name</span>
+                                <span class="org-desc">Org Description</span>
+                            </div>
+
+                            <div class="org-btn">
+                                <button class="learn-more">Learn More</button>
+                                <button class="join">Join</button>
+                        </div>
                     </div>
-                </div>
 
-<<<<<<< Updated upstream
-                <div class="card">
-                    <img src="/iskommunity-html-css-js/img/Sample/Sample (2).png" alt="">
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/iskommunity-html-css-js/img/Sample/Sample (2).png" alt="Organization">
+                            </div>
 
-                    <div class="intro">
-                        <h3>Organization Name 2</h3>
-                        <p>Organization Description</p>
+                            <div class="media-icons">
+                                <i class="ri-facebook-fill"></i>
+                                <i class="ri-twitter-fill"></i>
+                                <i class="ri-instagram-fill"></i>
+                            </div>
+
+                            <div class="name-card">
+                                <span class="org-name">Organization Name</span>
+                                <span class="org-desc">Org Description</span>
+                            </div>
+
+                            <div class="org-btn">
+                                <button class="learn-more">Learn More</button>
+                                <button class="join">Join</button>
+                        </div>
                     </div>
-                </div>
-
-                <div class="card">
-                    <img src="/iskommunity-html-css-js/img/Sample/Sample (3).png" alt="">
-
-                    <div class="intro">
-                        <h3>Organization Name 3</h3>
-                        <p>Organization Description</p>
-                    </div>
-=======
                     
->>>>>>> Stashed changes
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/iskommunity-html-css-js/img/Sample/Sample (3).png" alt="Organization">
+                            </div>
+
+                            <div class="media-icons">
+                                <i class="ri-facebook-fill"></i>
+                                <i class="ri-twitter-fill"></i>
+                                <i class="ri-instagram-fill"></i>
+                            </div>
+
+                            <div class="name-card">
+                                <span class="org-name">Organization Name</span>
+                                <span class="org-desc">Org Description</span>
+                            </div>
+
+                            <div class="org-btn">
+                                <button class="learn-more">Learn More</button>
+                                <button class="join">Join</button>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
+
+            <div class="swiper-pagination"></div>
         </section>
 
 <script src="/iskommunity-html-css-js/js/organization.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
 </body>
 </html>
