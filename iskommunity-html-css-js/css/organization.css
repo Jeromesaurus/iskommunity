@@ -33,7 +33,7 @@ body{
 .hero{
     height: 100%;
     width: 100%;
-    min-height: 70vh;
+    min-height: 60vh;
     background: linear-gradient(to right, #ca1e18, #730000);
     position: relative;
 }
@@ -349,203 +349,312 @@ button .ri-search-line{
     cursor: pointer;
 }
 
-/* Organization Dropdown */
-
-.select-menu{
-    width: 380px;
-    margin: 20px auto;
-}
-
-.select-menu .select-btn{
-    display: flex;
-    height: 55px;
-    background: #fff;
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 400;
-    border-radius: 8px;
-    align-items: center;
-    cursor: pointer;
-    justify-content: space-between;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.select-btn i{
-    font-size: 25px;
-    color: #555;
-    transition: 0.3s;
-}
-
-.select-menu .select-btn i{
-    transform: rotate(-180deg);
-
-}
-
-.select-menu .select-options{
-    position: relative;
-    padding: 20px;
-    margin-top: 10px;
-    border-radius: 8px;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.select-menu .select-options{
-    display: none;
-
-}
-
-.select-menu.active .select-options{
-    display: block;
-
-}
-
-
-.select-options .option{
-    display: flex;
-    height: 55px;
-    cursor: pointer;
-    padding: 0 16px;
-    border-radius: 8px;
-    align-items: center;
-    background: #fff;
-}
-
-.select-options .option:hover{
-    background: #d909096e;
-    color: #fff;
-}
-
-
-.option i{
-    font-size: 25px;
-    color: #000000;
-    margin-right: 12px;
-}
-
-.option .option-text{
-    font-size: 18px;
-    color: #000000;
-}
-
 /* Organization Cards */
-.org-card{
-    height: 100vh;
+
+/*Slider Tab*/
+.org-list{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f5f5f5;
+    min-height: 20vh;
+    padding: 0 10px
 }
 
-.swiper{
-    width: 1050px;
-}
-
-.org-card .card .image{
-    height: 140px;
-    width: 140px;
-    border-radius: 50%;
-    padding: 3px;
-    background: #730000;
-}
-
-.org-card .card .image img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #ffffff;
-}
-
-.card{
+.org-wrapper{
+    padding: 35px;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 13px;
+    overflow-x: hidden;
     position: relative;
+}
+
+
+.org-wrapper .icon{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    height: 100%;
+    width: 120px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.org-wrapper .icon:first-child{
+    left: 0;
+    background: linear-gradient(90deg, #fff 70%, transparent);
+}
+
+.org-wrapper .icon:last-child{
+    right: 0;
+    background: linear-gradient(-90deg, #fff 70%, transparent);
+    justify-content: flex-end;
+}
+
+.org-wrapper .icon i{
+    width: 55px;
+    height: 55px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.org-wrapper .icon:first-child i{
+    margin-left: 15px;
+}
+
+.org-wrapper .icon:last-child i{
+    margin-right: 15px;
+}
+
+.org-wrapper .icon i:hover{
+    background: #f5f4fd;
+}
+
+.org-wrapper .tabs-box{
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+.tabs-box .tab{
+    cursor: pointer;
+    font-size: 1.18rem;
+    white-space: nowrap;
+    background: #f5f4fd;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #bab7cf;
+}
+
+.tabs-box .tab.selected{
+    background: #730000;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+/* Organization Cards */
+.org-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.org-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px 50px;
+    padding: 75px 50px;
+}
+
+.org-container .org-card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
     background: #fff;
     border-radius: 20px;
-    margin: 20px 0;
-    width: 280px;
-}
-
-.card::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 35%;
-    background: var(--bg-color);
-    border-radius: 20px 20px 0 0; 
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.348);
     transition: 0.5s;
 }
 
-.card .card-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    position: relative;
-    z-index: 100;
+.org-container .org-card:hover{
+    height: 400px;
 }
 
-.card .media-icons{
+.org-container .org-card .org-imgBx{
     position: absolute;
-    top: 10px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #730000;
+    border-radius: 12px;
+    transition: 0.5s;
+    overflow: hidden;
 }
 
-.card .media-icons i{
-    color: #fff;
-    opacity: 0.6;
-    margin-top: 10px;
-    transition: all 0.3s;
-    cursor: pointer;
+.org-container .org-card:hover .org-imgBx{
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
 }
 
-.card .media-icons i:hover{
-    opacity: 1;
-}
-
-
-.card .name-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-    color: #000;
-}
-
-.name-card .org-name{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-
-.name-card .org-desc{
-    font-size: 14px;
-    font-weight: 400;
-    color: #555;
-}
-
-.card .org-btn{
-    display: flex;
+.org-container .org-card .org-imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    justify-content: space-around;
-    margin-top: 20px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
-.card .org-btn button{
-    background:#730000;
-    color: #fff;
-    outline: none;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 20px;
-    font-size: 14px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-} 
+.org-container .org-card .org-content{
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0 30px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
 
-.org-btn button:hover{
-    background: #ffbd00;
-    transition: 0.4s;
+.org-container .org-card:hover .org-content{
+    height: 250px;
+    top: 150px;
+}
+
+.org-container .org-card .org-content h2{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #730000;
+}
+
+.org-container .org-card .org-content p{
+    color: #333;
+}
+
+.org-container .org-card .org-content a{
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ffbd00;
+    color: #730000;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+
+/* Styling for Footer*/
+footer{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    background-color: #730000;
+    color: #fff;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.row .col{
+    flex-basis: 25%;
+    margin-bottom: 10px;
+}
+
+.row .col .logo{
+    width: 150px;
+}
+
+.row .col h3{
+    width: fit-content;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.row .col ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.row .col ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;    
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input{
+    margin-right: 10px;
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    border: 0;
+    outline: none;
+
+}
+
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button .ri-arrow{
+    font-size: 18px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.social-icons i{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-top: 1px solid #fff;
+    margin: 30px auto;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.footer-note{
+    text-align: center;
 }
