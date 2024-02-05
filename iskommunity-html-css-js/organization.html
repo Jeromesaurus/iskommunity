@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizations | PUP Iskommunity</title>
+    <link rel="stylesheet" href="css/organization.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"/>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+<body>
+     <!-- NavBar-->
+     <section class="hero">
+        <div class="main-width">
+            <header>
+                <div class="logo">
+                    <a href="#" class="logo-nav"><img src="/iskommunity-html-css-js/img/Iskommunity_Logo.png" alt="Logo"></a>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li ><a href="index.html">Home</a></li>
+                        <li class="active"><a href="organization.html">Organization</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li class="login-btn"><a href="login.html">Login</a></li>
+                        <li class="signup-btn"><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="org-content">
+                <div class="omain-text">
+                    <h2>Org <span>Search</span></h2>
+                    <p>Search your Org </p>
+                </div>
+    
+                <div class="search-box">
+                    <div class="row">
+                        <input type="text" id="input-box" placeholder="Search to find organization name" autocomplete="off">
+                        <button><i class="ri-search-line"></i></button>
+                    </div>
+                </div>
+                
+
+                <div class="select-menu">
+                    <div class="select-btn">
+                        <span class="sBtn-text">Select Category</span>
+                        <i class="ri-arrow-drop-down-fill"></i>
+                    </div>
+
+                    <div class="select-options">
+                        <li class="option">
+                            <i class="ri-school-fill"></i>
+                            <span class="option-text">Academic</span>
+                        </li>
+                        <li class="option">
+                            <i class="ri-mv-fill"></i>
+                            <span class="option-text">Dance</span>
+                        </li>  
+                        <li class="option">
+                            <i class="ri-palette-fill"></i>
+                            <span class="option-text">Creatives</span>
+                        </li>   
+                </div>
+
+            </div>
+            </div>
+
+        </section>
+
+        <section class="org-card">
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/iskommunity-html-css-js/img/Sample/Sample (1).png" alt="Organization">
+                            </div>
+
+                            <div class="media-icons">
+                                <i class="ri-facebook-fill"></i>
+                                <i class="ri-twitter-fill"></i>
+                                <i class="ri-instagram-fill"></i>
+                            </div>
+
+                            <div class="name-card">
+                                <span class="org-name">Organization Name</span>
+                                <span class="org-desc">Org Description</span>
+                            </div>
+
+                            <div class="org-btn">
+                                <button class="learn-more">Learn More</button>
+                                <button class="join">Join</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/iskommunity-html-css-js/img/Sample/Sample (2).png" alt="Organization">
+                            </div>
+
+                            <div class="media-icons">
+                                <i class="ri-facebook-fill"></i>
+                                <i class="ri-twitter-fill"></i>
+                                <i class="ri-instagram-fill"></i>
+                            </div>
+
+                            <div class="name-card">
+                                <span class="org-name">Organization Name</span>
+                                <span class="org-desc">Org Description</span>
+                            </div>
+
+                            <div class="org-btn">
+                                <button class="learn-more">Learn More</button>
+                                <button class="join">Join</button>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/iskommunity-html-css-js/img/Sample/Sample (3).png" alt="Organization">
+                            </div>
+
+                            <div class="media-icons">
+                                <i class="ri-facebook-fill"></i>
+                                <i class="ri-twitter-fill"></i>
+                                <i class="ri-instagram-fill"></i>
+                            </div>
+
+                            <div class="name-card">
+                                <span class="org-name">Organization Name</span>
+                                <span class="org-desc">Org Description</span>
+                            </div>
+
+                            <div class="org-btn">
+                                <button class="learn-more">Learn More</button>
+                                <button class="join">Join</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </section>
+
+<script src="/iskommunity-html-css-js/js/organization.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
+</body>
+</html>
