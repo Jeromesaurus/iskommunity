@@ -273,10 +273,10 @@ button .ri-search-line{
 }
 
 .contact-right {
-    flex-basis: 100%; /* Adjust the width as per your requirement */
-    max-width: 700px; /* Set a maximum width if needed */
-    margin: auto; /* Center the box horizontally */
-    padding: 30px; /* Adjust the padding as per your preference */
+    flex-basis: 100%; 
+    max-width: 700px; 
+    margin: auto; 
+    padding: 30px; 
     background: #ffbd00;
     color: #730000;
     border-radius: 10px;
@@ -351,41 +351,40 @@ button .ri-search-line{
     box-shadow: 0px 5px 15px 0px rgba(177, 10, 10, 0.556);
 }
 
-/* Update styles for .contact-left h3 */
+
 .contact-left h3 {
-    font-size: 18px; /* Decreased font size */
+    font-size: 18px; 
     font-weight: 600;
-    margin-bottom: 20px; /* Reduced margin */
+    margin-bottom: 20px; 
 }
 
-/* Update styles for .contact-right h3 */
+
 .contact-right h3 {
-    font-size: 25px; /* Decreased font size */
+    font-size: 25px; 
     font-weight: 800;
-    margin-bottom: 20px; /* Reduced margin */
+    margin-bottom: 20px; 
     margin: auto;
 }
 
-/* Update styles for table */
+
 table {
-    border-collapse: collapse; /* Changed from 'separate' to 'collapse' */
-    width: 100%; /* Make the table full width */
+    border-collapse: collapse; 
+    width: 100%; 
 }
 
 
 
-/* Update styles for tr */
 tr {
-    text-align: left; /* Center align content in rows */
-    margin-bottom: 15px; /* Increase margin for more spacing between rows */
+    text-align: left; 
+    margin-bottom: 15px; 
     font-size: 30px;
     
 }
 
-/* Update styles for th and td */
+
 th, td {
-    padding: 3px; /* Adjust padding for all sides */
-    font-size: 16px; /* Set the desired font size */
+    padding: 3px; 
+    font-size: 16px; 
     margin-inline: 30px;
 }
 
