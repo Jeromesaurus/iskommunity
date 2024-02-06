@@ -113,7 +113,7 @@ nav ul li.signup-btn:hover a{
     transition: 0.4s;
 }
 
-/* Support Search */
+
 .support-content{
     text-align: center;
     align-items: center;
@@ -234,8 +234,9 @@ button .ri-search-line{
 /* Styling for Contact Us Form */
 .contact{
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     background: #730000;
+    margin: auto;
 }
 
 .support-container{
@@ -271,12 +272,17 @@ button .ri-search-line{
     padding: 40px 60px;
 }
 
-.contact-right{
-    flex-basis: 40%;
-    padding: 40px;
+.contact-right {
+    flex-basis: 100%; /* Adjust the width as per your requirement */
+    max-width: 700px; /* Set a maximum width if needed */
+    margin: auto; /* Center the box horizontally */
+    padding: 30px; /* Adjust the padding as per your preference */
     background: #ffbd00;
     color: #730000;
+    border-radius: 10px;
+    padding-bottom: 40px;
 }
+
 
 .support-container p{
     margin-bottom: 40px;
@@ -345,27 +351,53 @@ button .ri-search-line{
     box-shadow: 0px 5px 15px 0px rgba(177, 10, 10, 0.556);
 }
 
-.contact-left h3{
-    font-size: 20px;
+/* Update styles for .contact-left h3 */
+.contact-left h3 {
+    font-size: 18px; /* Decreased font size */
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* Reduced margin */
 }
 
-.contact-right h3{
-    font-size: 20px;
+/* Update styles for .contact-right h3 */
+.contact-right h3 {
+    font-size: 25px; /* Decreased font size */
     font-weight: 800;
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* Reduced margin */
+    margin: auto;
 }
 
-tr td:first-child{
-    padding-right: 20px;
-    font-weight: 600;
+/* Update styles for table */
+table {
+    border-collapse: collapse; /* Changed from 'separate' to 'collapse' */
+    width: 100%; /* Make the table full width */
 }
 
-tr td{
-    padding-top: 20px;
+
+
+/* Update styles for tr */
+tr {
+    text-align: left; /* Center align content in rows */
+    margin-bottom: 15px; /* Increase margin for more spacing between rows */
+    font-size: 30px;
+    
 }
 
+/* Update styles for th and td */
+th, td {
+    padding: 3px; /* Adjust padding for all sides */
+    font-size: 16px; /* Set the desired font size */
+    margin-inline: 30px;
+}
+
+
+td a {
+    text-decoration: none;
+    color: rgb(90, 80, 80);
+  }
+
+  td a:hover {
+    color: #FFF;
+}
 
 
 
