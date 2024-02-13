@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership | PUP Iskommunity</title>
+    <link rel="stylesheet" href="css/orgprofile-membership.css">
+    <!-- <link rel="stylesheet" href="css/tables.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"/>
+
+</head>
+<body>
+<!-- NavBar-->
+<section class="hero">
+<div class="main-width">
+    <header>
+        <div class="logo">
+            <a href="#" class="logo-nav"><img src="/iskommunity-html-css-js/img/Iskommunity_Logo.png" alt="Logo"></a>
+        </div>
+        
+        <nav>
+            <ul>
+                <li ><a href="index.html">Home</a></li>
+                <li class=""><a href="organization.html">Organization</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li class="login-btn"><a href="login.html">Login</a></li>
+                <li class="signup-btn"><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>    
+</section>
+
+<section class="profile">
+    <div class="header_wrapper">
+        <header> <img src="/iskommunity-html-css-js/img/OrgCover/cover_orgsample.jpg" class="cover-img"> </header>
+
+        <div class="cols_container">
+            <!-- <img src="/iskommunity-html-css-js/img/OrgCover/cover_orgsample (1).jpg" class="cover-img"> -->
+
+            <div class="left_col">
+                
+                <div class="img_container">
+                    <img src="/iskommunity-html-css-js/img/OrgLogo/org_logosample (1).png" class="logo-img">
+
+                </div>
+                <h2>Organization Name</h2>
+                <p>Organization Type</p>
+                <p>College Under</p>
+
+                <button class="join"><i class="ri-user-add-fill"></i> Join Organization</button>
+
+                <div class="org_content">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus ipsa, expedita nam qui ea nihil eaque labore ducimus, harum tempore voluptatibus officia.</p>
+
+                    <!-- <ul>
+                        <li><i class="ri-facebook-circle-fill"></i></li>
+                        <li><i class="ri-twitter-x-fill"></i></li>
+                        <li><i class="ri-instagram-fill"></i></li>
+                        <li><i class="ri-threads-fill"></i></li>
+                    </ul> -->
+                </div>
+            </div>
+            
+            <div class="right_col">
+                <nav>
+                    <ul>
+                        <li><a href="./orgprofile-post.html">Posts</a></li>
+                        <li><a href="./orgprofile-membership.html">Membership</a></li>
+                        <li><a href="./orgprofile-reviews.html">Reviews</a></li>
+                    </ul>
+
+                    <!-- <button class="join"><i class="ri-user-add-fill"></i> Join Organization</button> -->
+                </nav> 
+                
+                <div class="post-col">
+                    <div class="write-post-container">
+                        <div class="user-profile">
+                            <img src="/iskommunity-html-css-js/img/OrgLogo/org_logosample (1).png" alt="">
+                        
+                            <p>Organization Name</p>
+                            
+                            
+                        </div>
+                    </div>
+
+            <!-- For Org Representative View -->
+            <div class="membership-tab">
+                <form action="" method="post" class="post-content" enctype="multipart/form-data">
+
+                    <input type="hidden" name="status" id="status" value="<?php echo $status ?>"> 
+
+                    <input type="hidden" name="org" id="org" value="<?php echo $org_code ?>"> 
+
+                    <div class="body-input">
+
+                        <div class="buttons">
+                            <button type="submit" name="edit-membership">Save changes</button>
+                            <a href=">" class="cancel">Cancel</a>
+                        </div>
+
+                        <div class="status-membership" id="status-div">
+                            <h2 id="statusText">Membership Status: CLOSED</h2>
+                            <button id="status-membership" onclick="toggleMembership()" type="button" >Open Membership Application</button>
+                        </div>
+
+                        <div class="membership" id="membershipSection">
+                            <div class="body-header">
+                                <h2>Membership Process Text</h2>
+                            </div>
+
+                            <textarea name="membership_Process_Text" id="editor"cols="30"><?php echo $membership_text ?></textarea>
+                
+                            <div class="date-membership">
+                                <h2>Membership Date</h2>
+                                <div class="dates">
+                                    <div class="starts">
+                                        <h3>Starts</h3>
+                                        <input type="date" name="start_Date" id="startDate" value="<?php echo $start_date ?>">
+                                    </div>
+
+                                    <div class="until">
+                                        <h3>Until</h3>
+                                        <input type="date" name="end_Date" id="endDate" value="<?php echo $end_date ?>">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                
+                            <div class="url-membership">
+                                <h2>Insert URL</h2>
+                                <input type="url" placeholder="URL of the Online Membership (e.g Google Forms, Microsoft Forms) or other links to your membership application if you are not utilizing online forms" name="membership_Form_URL" id="url" value="<?php echo $form_url ?>">
+                            </div>
+                        </div>
+                    </div>
+                </form> 
+                
+
+                <!-- For Member View -->
+                <!-- Close Membership Application -->
+                
+
+
+
+                <!-- Open Membership Application -->
+                </div>
+                
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script src="js/orgprofile.js"></script>
+</body>
+</html>

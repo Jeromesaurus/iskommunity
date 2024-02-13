@@ -249,8 +249,9 @@ nav ul li.signup-btn:hover a{
 
 }
 
-.header_wrapper .cols_container .right_col nav ul li{ 
+.header_wrapper .cols_container .right_col nav ul li a{ 
     text-transform: uppercase;
+    font-weight: 400;
     color: #808080;
     cursor: pointer;
     
@@ -261,9 +262,9 @@ nav ul li.signup-btn:hover a{
     text-decoration: none;
 }
 
-.header_wrapper .cols_container .right_col nav ul li:nth-child(1){ 
+.header_wrapper .cols_container .right_col nav ul li:nth-child(1) a{ 
     color: #0f0f0f;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .post-col{
@@ -287,6 +288,7 @@ nav ul li.signup-btn:hover a{
 .user-profile{
     display: flex;
     align-items: center;
+
 }
 
 .user-profile img{
@@ -358,9 +360,18 @@ nav ul li.signup-btn:hover a{
     color: #730000;
     margin: 20px 0;
     box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.2);
+    
+
 }
 
-.user-profile span{
+.user-profile-pre{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.user-profile-pre span{
     font-size: 13px;
     color: #808080;
 
@@ -371,6 +382,8 @@ nav ul li.signup-btn:hover a{
     color: #787878;
     margin: 15px 0;
     font-size: 15px;
+  
+
 }
 
 
@@ -381,58 +394,29 @@ nav ul li.signup-btn:hover a{
     object-fit: cover;
 }
 
-.post-container .more{
+
+.post-container .post-options {
+    padding: 5px;
+    right: 10;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    margin-top: 10px;
-    margin-left: auto;
-
-}
-
-.post-container .more i{
-    font-size: 30px;
-    color: #808080;
-    cursor: pointer;
-
-}
-
-.more-container {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
-  
-.more {
-    display: flex;
-    right: 0;
-    align-items: center;
-    justify-content: center;
-    border: none; 
-    cursor: pointer;
+    flex-direction: row;
  
-}
 
-
-.post-options {
-    position: absolute;
-    width: 200px;
-    top: 130%;
-    right: 5%; 
-    background-color: #fff; 
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
-    padding: 5px; 
-    display: none;
 }
 
 .post-options a {
-    display: block;
     padding: 5px 10px;
     text-decoration: none;
     color: #808080;
     font-size: 14px;
     transition: 0.4s;
+    font-size: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
 }
 
 .more:focus .post-options {
