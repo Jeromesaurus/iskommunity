@@ -119,9 +119,12 @@ nav ul li.signup-btn:hover a{
 
 
 /* Styling for Profile Page*/
+.header_wrapper{
+    position: relative;
+}
+
 .header_wrapper header{
     width: 100%;
-    /* background: url(/iskommunity-html-css-js/img/OrgCover/cover_orgsample.jpg) no-repeat 50% 20% / cover; */
 }
 
 .header_wrapper header img{
@@ -130,13 +133,6 @@ nav ul li.signup-btn:hover a{
     object-fit: cover;
 }
 
-/* .header_wrapper header{
-    width: 1400px;
-    background: url(/iskommunity-html-css-js/img/OrgCover/cover_orgsample.jpg) no-repeat 50% 20% / cover;
-    min-height: 300px;
-} */
-
-/* Image Cover */
 .cols_container{
     color: #252525;
 }
@@ -211,6 +207,7 @@ nav ul li.signup-btn:hover a{
     cursor: pointer;
 }
 
+
 .header_wrapper .cols_container .left_col button{
     background: #730000;
     color: #fff;
@@ -227,123 +224,70 @@ nav ul li.signup-btn:hover a{
     margin-right: 10px;
 }
 
-.header_wrapper .cols_container .left_col button a{
-    text-decoration: none;
-    color: #fff;
-}
-
 .header_wrapper .cols_container .left_col button:hover{
     opacity: 0.8;
 }
 
+
+
 /* Right Column */
-.header_wrapper .cols_container .right_col nav{
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-    padding: 20px 0;
-    justify-content: space-between;
-    margin-left: -70px;
-}
 
-.header_wrapper .cols_container .right_col nav ul{
+
+.header-edit{
     display: flex;
-    flex-direction: row; 
-    align-items: center;
     justify-content: center;
-
-}
-
-.header_wrapper .cols_container .right_col nav ul li a{ 
-    text-transform: uppercase;
-    font-weight: 400;
-    color: #808080;
-    cursor: pointer;
-    
-}
-
-
-.header_wrapper .cols_container .right_col nav ul li a{ 
-    text-decoration: none;
-}
-
-.header_wrapper .cols_container .right_col nav ul li:nth-child(1) a{ 
-    color: #0f0f0f;
-    font-weight: 700;
-}
-
-.post-col{
-    width: 100%;
-    padding: 20px;
-    background: #fff;
-    border-radius: 6px;
-    margin-top: 20px;
-    box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.2);
-
-}
-
-.write-post-container{
-    width: 100%;
-    background: #ffe6e6;
-    border-radius: 6px;
-    padding: 20px;
-    color: #730000;
-}
-
-.user-profile{
-    display: flex;
     align-items: center;
-
-}
-
-.user-profile img{
-    width: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 10px;
-}
-
-.user-profile p{
-    margin-bottom: -5;
-    font-weight: 500;
-    color: #730000;
-}
-
-.post-input-container{
-    padding-left: 10px;
-    padding-top: 20px;
-}
-
-.post-input-container textarea{
-    width: 100%;
-    border: 0;
-    outline: 0;
-    border-bottom: 1px solid #ccc;
-    background: transparent;
-    resize: none;
-}
-
-
-.add-post-links{
-    display: flex;
+    gap: 20px;
     margin-top: 20px;
+    width: 100%;
+    background: #730000;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 6px;
 }
 
-.add-post-links a{
-    text-decoration: none;
+.right_col form{
+    width: 100%;
     display: flex;
-    align-items: center;
-    color: #730000;
-    margin-right: 30px;
+    flex-direction: column;
+    gap: 20px;
+    background: #ffdede;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+.form-group {
+    display: block;  
+  }
+  
+.form-group label {
+    display: block;   
+    margin-bottom: 5px; 
     font-size: 16px;
+    font-weight: 600;
+    color: #242424;  
 }
 
-.add-post-links i{
-    margin-right: 10px;
-    font-size: 30px;
+.form-group input{
+    width: 100%;   
+    padding: 10px 15px;   
+    font-size: 16px;   
+    border: 1px solid #ddd;   
+    border-radius: 6px;   
+    outline: none;   
 }
 
-.add-post-links button{
+.form-group textarea{
+    width: 100%;   
+    padding: 10px 15px;   
+    font-size: 16px;   
+    border: 1px solid #ddd;   
+    border-radius: 6px;   
+    outline: none;
+    resize: none; 
+}
+
+.save-btn{
     background: #730000;
     color: #fff;
     border: none;
@@ -352,87 +296,30 @@ nav ul li.signup-btn:hover a{
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
-    display: flex;
-    margin-left: 450px;
 }
 
+.save-btn:hover{
+    opacity: 0.8;
+}
 
-.post-container{
-    width: 100%;
-    background-color: #ffffff;
-    border-radius: 6px;
-    padding: 20px;
+.cancel-btn{
+    background: #fff;
     color: #730000;
-    margin: 20px 0;
-    box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.2);
-    
-
-}
-
-.user-profile-pre{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-
-}
-
-.user-profile-pre span{
-    font-size: 13px;
-    color: #808080;
-
-}
-
-
-.post-text{
-    color: #787878;
-    margin: 15px 0;
-    font-size: 15px;
-  
-
-}
-
-
-.post-img{
-    width: 100%;
+    border: 1px solid #730000;
+    padding: 10px 25px;
     border-radius: 6px;
-    margin-bottom: 5px;
-    object-fit: cover;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cancel-btn:hover{
+    background: #730000;
+    color: #fff;
+    opacity: 0.8;
 }
 
 
-.post-container .post-options {
-    padding: 5px;
-    right: 10;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    flex-direction: row;
- 
-
-}
-
-.post-options a {
-    padding: 5px 10px;
-    text-decoration: none;
-    color: #808080;
-    font-size: 14px;
-    transition: 0.4s;
-    font-size: 15px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-
-}
-
-.more:focus .post-options {
-    display: block;
-}
-
-.post-options a:hover {
-    background-color: #f2f2f2;
-    color: #730000;
-}
-  
 
 
 /* Responsiveness */
@@ -462,75 +349,74 @@ nav ul li.signup-btn:hover a{
         flex-direction: row;
         gap: 30px;  
     }
-
-
-
 }
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
     /* Navigation */
-    nav ul { 
-        display: none; 
+    nav ul li button{ 
+        display: none;
     }
 
-    
+     /* Profile Section */
     .header_wrapper .cols_container {
-        flex-direction: column; 
+        grid-template-columns: 1fr; 
+        text-align: center;
     }
 
-    .add-post-links button{
-        margin-left: 150px;
+    .header_wrapper .cols_container .cover-img {
+        height: 250px; 
     }
 
-    .left_col, .right_col {
-        flex: 0 0 100%; 
-        margin: 10px 0; 
-    }
-
-    .cover-img, .logo-img {
-        width: 100%;
-        height: auto; 
-    }
-
-    
-    .write-post-container, .post-container {
-        width: 100%;
-    }    
-
-    
-    .profile p, .org_content p {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 375px) {
-    body { 
-        font-size: 15px; 
-    } 
-
-    .main-width {
-        padding: 0 10px; 
-    }
-
-   
     .left_col h2 {
         font-size: 22px;
     }
 
-    .add-post-links button{
-        margin-left: 120px;
+    .header-edit{
+        margin: 10px 10px;
     }
 
-    .left_col .org_content p {
-        font-size: 13px; 
+    .right_col form {
+        margin: 20px 20px; /* Center the form  */
     }
 
-    .join {
-        padding: 8px 20px; 
+    .form-group {
+        margin-bottom: 15px; 
     }
 
-    .post-text {
-        font-size: 14px; 
+    .save-btn, .cancel-btn {
+        margin: 0 10px; /* Add spacing between buttons */
+        width: 100%; /* Make buttons take up less horizontal space */
     }
 }
 
+@media (max-width: 320px) {
+    body {
+        font-size: 14px; 
+    }
+
+    .main-width {
+        padding: 0 5px; 
+    } 
+
+    /* Profile Images  */
+    .logo-nav img {
+        width: 180px;
+    }
+
+    .left_col .img_container img {
+        width: 100px; 
+        height: 100px;
+    }
+
+    .left_col p {
+        font-size: 13px; 
+    } 
+
+    .form-group label { 
+        display: block; 
+    }
+
+    .form-group input, .form-group textarea {
+        width: 95%;
+    }
+}
