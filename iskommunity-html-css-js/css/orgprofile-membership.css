@@ -392,15 +392,15 @@ nav ul li.signup-btn:hover a{
 
 }
 
-.membership{
+/* .membership{
     
 }
 
 .body-header{
-}
+} */
 
 .membership textarea{
-    width: 500px;
+    width: 800px;
     height: 100px;
     padding: 10px 20px;
     border: 0;
@@ -418,6 +418,79 @@ nav ul li.signup-btn:hover a{
     border-bottom: 1px solid #ccc;
     background: #fff;
     resize: none;
+}
+
+.status-membership{
+    flex: display;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.membership-section-closed{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #730000;
+    color: #fff;
+    padding: 20px ;
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+.membership-section-closed h2{
+    margin-bottom: 10px;
+    background-color: #fff;
+    color: #730000;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 800;
+}
+
+.membership-section-open{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: #730000 2px solid;
+    color: #730000;
+    padding: 20px 30px;
+    border-radius: 6px;
+}
+
+.membership-section-open h2{
+    margin-bottom: 10px;
+    background-color: #730000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.membership-section-open p{
+    margin-bottom: 10px;
+    font-weight: 400;
+    
+}
+
+.date-membership{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    background: #ffd8d8;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.date-membership h2{
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 100;
+
 }
 
 /* Responsiveness */

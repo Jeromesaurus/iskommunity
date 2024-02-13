@@ -462,4 +462,70 @@ nav ul li.signup-btn:hover a{
 
 }
 
+@media (max-width: 480px) {
+    /* Navigation */
+    nav ul { 
+        display: none; 
+    }
+
+    
+    .header_wrapper .cols_container {
+        flex-direction: column; 
+    }
+
+    .add-post-links button{
+        margin-left: 150px;
+    }
+
+    .left_col, .right_col {
+        flex: 0 0 100%; 
+        margin: 10px 0; 
+    }
+
+    .cover-img, .logo-img {
+        width: 100%;
+        height: auto; 
+    }
+
+    
+    .write-post-container, .post-container {
+        width: 100%;
+    }    
+
+    
+    .profile p, .org_content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    body { 
+        font-size: 15px; 
+    } 
+
+    .main-width {
+        padding: 0 10px; 
+    }
+
+   
+    .left_col h2 {
+        font-size: 22px;
+    }
+
+    .add-post-links button{
+        margin-left: 120px;
+    }
+
+    .left_col .org_content p {
+        font-size: 13px; 
+    }
+
+    .join {
+        padding: 8px 20px; 
+    }
+
+    .post-text {
+        font-size: 14px; 
+    }
+}
 
