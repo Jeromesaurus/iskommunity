@@ -318,10 +318,6 @@ nav ul li.signup-btn:hover a{
 
 /* EDIT MEMBERSHIP */
 
-.date-membership{
-    margin-top: 1.5rem;
-}
-
 .dates{
     display: flex;
     gap: 2rem;
@@ -367,7 +363,7 @@ nav ul li.signup-btn:hover a{
 
 
 .buttons button{
-    width: 200px;
+    width: 150px;
     padding: 10px;
     background-color: #730000;
     text-decoration: none;
@@ -392,15 +388,8 @@ nav ul li.signup-btn:hover a{
 
 }
 
-/* .membership{
-    
-}
-
-.body-header{
-} */
-
 .membership textarea{
-    width: 800px;
+    width: 700px;
     height: 100px;
     padding: 10px 20px;
     border: 0;
@@ -478,7 +467,7 @@ nav ul li.signup-btn:hover a{
 
 .date-membership{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin: 20px;
     background: #ffd8d8;
@@ -490,10 +479,104 @@ nav ul li.signup-btn:hover a{
     font-size: 15px;
     margin-bottom: 10px;
     font-weight: 100;
+    background: #730000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
 
 }
 
+.date-membership-preview{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    background: #ffd8d8;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.date-membership-preview h2{
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 100;
+    background: #730000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+
+}
 /* Responsiveness */
+@media (max-width: 1024px) {
+    .main-width { 
+        width: 95%;
+        padding: 0 10px; 
+    }
+
+    .cols_container {
+        grid-template-columns: 1fr; 
+        text-align: center; 
+    } 
+
+    .left_col, .right_col {
+        max-width: 450px;
+        margin: 20px auto; 
+    }
+
+    /* Form Modifications */
+    .body-input{
+        width: 90%;
+    }
+
+    form{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .buttons{
+        flex-direction: column;
+    }
+
+    #status-membership{
+        font-size: 0.7rem;
+    }
+
+    .membership textarea{
+        width: 100%;
+    }
+
+    .date-membership{
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 90%; 
+        margin: 0 auto 15px;
+    }
+
+    .form-group label {
+        display: block;
+    }
+
+    .form-group input, .form-group textarea {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .membership-tab-preview h2{
+        font-size: 16px;
+    }
+
+    .date-membership-preview{
+        flex-direction: column;
+    }
+    .save-btn, .cancel-btn {
+        width: 45%; 
+        margin: 5px;
+    }
+}
+
+
 @media(min-width: 868px) {
     .header_wrapper .cols_container{
         max-width: 1200px;
@@ -526,3 +609,88 @@ nav ul li.signup-btn:hover a{
 }
 
 
+@media (max-width: 425px) {
+    .main-width {
+        width: 98%; 
+        padding: 0 5px;
+    }
+
+    .logo-nav img {
+        width: 250px; 
+    }
+
+    nav ul li a {
+        margin-left: 30px; 
+    }
+
+    /* Profile Adjustments */
+    .header_wrapper .cols_container { 
+        grid-template-columns: 1fr; 
+        text-align: center; 
+    }
+
+    .left_col h2 {
+        font-size: 24px; 
+    }
+
+    .header_wrapper .cols_container .cover-img {
+        height: 220px; 
+    }
+
+    
+    .membership textarea {
+        width: 100%; 
+    }
+
+    .dates {
+        flex-direction: column; 
+    }
+
+    .date-membership h2{
+        font-size: 14px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 320px) {
+    .main-width {
+        width: 100%; 
+        padding: 0; 
+    }
+
+    body {
+        font-size: 14px; 
+    }
+
+    .logo-nav img {
+        width: 200px;
+    }
+
+    /* Navigation Changes */
+    nav{ 
+        display: none; 
+    }
+
+
+    /* Profile Adjustments */
+    .left_col {
+        max-width: 280px; 
+    }
+
+    .left_col h2 {
+        font-size: 16px; 
+    }
+
+    .left_col p {
+        font-size: 12px; 
+    }
+
+    .left_col .img_container img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .membership-tab {
+        flex-direction: column;
+    } 
+}
