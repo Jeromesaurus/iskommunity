@@ -463,6 +463,11 @@ nav ul li.signup-btn:hover a{
     opacity: 0.8;
 }
 
+.create-btn button a{
+    text-decoration: none;
+    color: #fff;
+}
+
 /* Events card */
 .events-card { 
     display: flex;

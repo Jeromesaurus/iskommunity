@@ -287,10 +287,6 @@ nav ul li.signup-btn:hover a{
     resize: none; 
 }
 
-.form-group input[type="date"] { 
-    flex: 1 1 auto; 
-}
-
 .save-btn{
     background: #730000;
     color: #fff;

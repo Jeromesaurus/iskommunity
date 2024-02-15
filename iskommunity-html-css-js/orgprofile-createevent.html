@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Event | PUP Iskommunity</title>
+    <link rel="stylesheet" href="css/orgprofile-createevent.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"/>
+
+</head>
+<body>
+<!-- NavBar-->
+<section class="hero">
+<div class="main-width">
+    <header>
+        <div class="logo">
+            <a href="#" class="logo-nav"><img src="/iskommunity-html-css-js/img/Iskommunity_Logo.png" alt="Logo"></a>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="./orgprofile-about.html">About</a></li>
+                <li><a href="./orgprofile-officers.html">Officers</a></li>
+                <li><a href="./orgprofile-post.html">Posts</a></li>
+                <li><a href="./orgprofile-events.html">Events</a></li>
+                <li><a href="./orgprofile-membership.html">Membership</a></li>
+                <li><a href="./orgprofile-reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>    
+</section>
+
+<section class="profile">
+    <div class="header_wrapper">
+        <header> <img src="/iskommunity-html-css-js/img/OrgCover/cover_orgsample.jpg" class="cover-img"> </header>
+        <!-- <button class="edit-cover-photo"><i class="ri-camera-line"></i>Edit Cover Photo</button> -->
+
+        <div class="cols_container">
+
+            <div class="left_col">
+                
+                <div class="img_container">
+                    <img src="./img/blank-profile.png" class="logo-img">
+
+                </div>
+
+                <h2>Organization Name</h2>
+                <p>Organization Type</p>
+                <p>College Under</p>
+
+
+                <div class="org_content">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus ipsa, expedita nam qui ea nihil eaque labore ducimus, harum tempore voluptatibus officia.</p>
+                </div>
+            </div>
+            
+            <div class="right_col">
+                <div class="header-edit">
+                    <h2>Create Event</h2>
+                </div>
+                
+                <form action="" method="post"> 
+                    <div class="form-group">
+                        <label for="eventTitle">Event Title:</label>
+                        <input type="text" id="eventTitle" name="eventTitle" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="eventDescription">Event Description:</label>
+                        <textarea id="eventDescription" name="eventDescription" rows="4"></textarea>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="eventLocation">Event Location:</label>
+                        <input type="text" id="eventLocation" name="eventLocation" required> 
+                    </div>
+                
+                    <div class="form-group"> 
+                        <label for="eventStartDate">Event Start Date:</label>
+                        <input type="date" id="eventStartDate" name="eventStartDate" required>
+                    
+                        <label for="eventStartTime">Start Time:</label>
+                        <input type="time" id="eventStartTime" name="eventStartTime" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="eventEndDate">Event End Date:</label>
+                        <input type="date" id="eventEndDate" name="eventEndDate" required>
+                    
+                        <label for="eventEndTime">End Time:</label>
+                        <input type="time" id="eventEndTime" name="eventEndTime" required> 
+                    </div>
+            
+                    <button class="save-btn" type="submit">Save Changes</button>
+                    <button class="cancel-btn" type="reset">Cancel</button>
+               </form>
+            
+
+        </div>
+    </div>
+</section>
+
+<script src="js/orgprofile.js"></script>
+</body>
+</html>
