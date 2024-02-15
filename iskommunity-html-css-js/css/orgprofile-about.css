@@ -130,11 +130,6 @@ nav ul li.signup-btn:hover a{
     object-fit: cover;
 }
 
-/* .header_wrapper header{
-    width: 1400px;
-    background: url(/iskommunity-html-css-js/img/OrgCover/cover_orgsample.jpg) no-repeat 50% 20% / cover;
-    min-height: 300px;
-} */
 
 /* Image Cover */
 .cols_container{
@@ -189,11 +184,19 @@ nav ul li.signup-btn:hover a{
     margin: 0;
 }
 
+.header_wrapper .cols_container .org_content h2{
+    font-size: 30px;
+    color: #730000;
+    margin-top: 10px;
+    line-height: 1.8rem;
+    margin-bottom: 5px;
+}
+
 .header_wrapper .cols_container .org_content p{
     font-size: 14px;
     color: #242424;
-    margin-top: 10px;
     line-height: 1.8rem;
+    margin-bottom: 20px;
 }
 
 .header_wrapper .cols_container .org_content ul{
@@ -227,11 +230,15 @@ nav ul li.signup-btn:hover a{
     margin-right: 10px;
 }
 
+.header_wrapper .cols_container .left_col button a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .header_wrapper .cols_container .left_col button:hover{
     opacity: 0.8;
 }
 
-/* Right Column */
 
 /* Right Column */
 .header_wrapper .cols_container .right_col{
@@ -249,7 +256,6 @@ nav ul li.signup-btn:hover a{
     justify-content: center;
     width: 100%;
     position: relative;
-    border: solid 2px red;
 }
 
 .header_wrapper .cols_container .right_col nav ul{
@@ -258,7 +264,6 @@ nav ul li.signup-btn:hover a{
     width: 100%;
     position: relative;
     margin: 0 auto;
-    border: solid 2px red;
 }
 
 .header_wrapper .cols_container .right_col nav ul li{ 
@@ -282,10 +287,10 @@ nav ul li.signup-btn:hover a{
 
 }
 
-
-.header_wrapper .cols_container .right_col nav ul li:nth-child(5) a{ 
+.header_wrapper .cols_container .right_col nav ul li:nth-child(1) a{ 
     color: #0f0f0f;
     font-weight: 700;
+    width: 100%;
 }
 
 .post-col{
@@ -300,7 +305,7 @@ nav ul li.signup-btn:hover a{
 
 .write-post-container{
     width: 100%;
-    background: #ffd8d8;
+    background: #ffe6e6;
     border-radius: 6px;
     padding: 20px;
     color: #730000;
@@ -309,19 +314,48 @@ nav ul li.signup-btn:hover a{
 .user-profile{
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .user-profile img{
-    width: 50px;
+    width: 100px;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
-.user-profile p{
-    margin-bottom: -5;
-    font-weight: 500;
+.user-profile h2{
+    font-size: 30px;
+    font-weight: 700;
     color: #730000;
+}
+
+.soc-meds{
+    margin-top: 20px;
+    
+}
+
+.soc-meds ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #730000;
+    list-style: none;
+}
+
+.soc-meds ul li a{
+    margin-right: 15px;
+    color: #730000;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.soc-meds ul li i{
+    margin-right: 10px;
+    font-size: 25px;
 }
 
 .post-input-container{
@@ -338,204 +372,128 @@ nav ul li.signup-btn:hover a{
     resize: none;
 }
 
-/* EDIT MEMBERSHIP */
 
-.dates{
+.add-post-links{
     display: flex;
-    gap: 2rem;
-}
-
-.url-membership input{
-    width: 100%;
-}
-
-#membershipSection{
-    display: none;
-}
-
-#status-membership{
-    padding: 0.8rem 2rem;
-    cursor: pointer;
-    border-radius: 10px;
-    color: white;
-    background: #730000;
-    font-weight: 500;
-    font-size: 1rem;
-    text-transform: uppercase;
-    border: none;
-}
-
-
-/* Membership Section */
-.membership-tab{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 20px;
-    background: #ffd8d8;
-    padding: 20px;
-    border-radius: 6px;
 }
 
-.buttons{
-    
-    gap: 30px;
-    margin-bottom: 20px;
-}
-
-
-.buttons button{
-    width: 150px;
-    padding: 10px;
-    background-color: #730000;
+.add-post-links a{
     text-decoration: none;
-    color: #fff;
+    display: flex;
+    align-items: center;
+    color: #730000;
+    margin-right: 30px;
     font-size: 16px;
-    font-weight: 600;
+}
+
+.add-post-links i{
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.add-post-links button{
+    background: #730000;
+    color: #fff;
     border: none;
+    padding: 10px 25px;
     border-radius: 6px;
     cursor: pointer;
-}
-
-.buttons a{
-    width: 200px;
-    padding: 10px;
-    text-decoration: none;
-    color: #730000;
     font-size: 16px;
     font-weight: 600;
-    border: 2px solid #730000;
-    border-radius: 6px;
-    cursor: pointer;
-
-}
-
-.membership textarea{
-    width: 700px;
-    height: 100px;
-    padding: 10px 20px;
-    border: 0;
-    outline: 0;
-    border-bottom: 1px solid #ccc;
-    background: #fff;
-    resize: none;
-}
-
-.membership input{
-    width: 100%;
-    padding: 10px 20px;
-    border: 0;
-    outline: 0;
-    border-bottom: 1px solid #ccc;
-    background: #fff;
-    resize: none;
-}
-
-.status-membership{
-    flex: display;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.membership-section-closed{
-    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #730000;
-    color: #fff;
-    padding: 20px ;
+    margin-left: 450px;
+}
+
+
+.post-container{
+    width: 100%;
+    background-color: #ffffff;
     border-radius: 6px;
+    padding: 20px;
+    color: #730000;
     margin: 20px 0;
-}
-
-.membership-section-closed h2{
-    margin-bottom: 10px;
-    background-color: #fff;
-    color: #730000;
-    padding: 10px 20px;
-    border-radius: 6px;
-    font-weight: 800;
-}
-
-.membership-section-open{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: #730000 2px solid;
-    color: #730000;
-    padding: 20px 30px;
-    border-radius: 6px;
-}
-
-.membership-section-open h2{
-    margin-bottom: 10px;
-    background-color: #730000;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 6px;
-    font-weight: 700;
-}
-
-.membership-section-open p{
-    margin-bottom: 10px;
-    font-weight: 400;
+    box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.2);
     
+
 }
 
-.date-membership{
+.user-profile-pre{
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    margin: 20px;
-    background: #ffd8d8;
-    padding: 20px;
-    border-radius: 6px;
-}
-
-.date-membership h2{
-    font-size: 15px;
     margin-bottom: 10px;
-    font-weight: 100;
-    background: #730000;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 6px;
 
 }
 
-.date-membership-preview{
+.user-profile-pre span{
+    font-size: 13px;
+    color: #808080;
+
+}
+
+
+.post-text{
+    color: #787878;
+    margin: 15px 0;
+    font-size: 15px;
+  
+
+}
+
+
+.post-img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    object-fit: cover;
+}
+
+
+.post-container .post-options {
+    padding: 5px;
+    right: 10;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 20px;
-    background: #ffd8d8;
-    padding: 20px;
-    border-radius: 6px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+ 
+
 }
 
-.date-membership-preview h2{
+.post-options a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #808080;
+    font-size: 14px;
+    transition: 0.4s;
     font-size: 15px;
-    margin-bottom: 10px;
-    font-weight: 100;
-    background: #730000;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 6px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 
 }
 
+.more:focus .post-options {
+    display: block;
+}
+
+.post-options a:hover {
+    background-color: #f2f2f2;
+    color: #730000;
+}
+
+
+.page-label{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+}
 
 .page-label h2{
-    color: #730000;
     font-size: 36px;
     font-weight: 700;
     text-transform: uppercase;
-    text-align: center;
 }
 
 .page-label p{
@@ -547,76 +505,6 @@ nav ul li.signup-btn:hover a{
 
 
 /* Responsiveness */
-@media (max-width: 1024px) {
-    .main-width { 
-        width: 95%;
-        padding: 0 10px; 
-    }
-
-    .cols_container {
-        grid-template-columns: 1fr; 
-        text-align: center; 
-    } 
-
-    .left_col, .right_col {
-        max-width: 450px;
-        margin: 20px auto; 
-    }
-
-    /* Form Modifications */
-    .body-input{
-        width: 90%;
-    }
-
-    form{
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .buttons{
-        flex-direction: column;
-    }
-
-    #status-membership{
-        font-size: 0.7rem;
-    }
-
-    .membership textarea{
-        width: 100%;
-    }
-
-    .date-membership{
-        flex-direction: column;
-    }
-
-    .form-group {
-        width: 90%; 
-        margin: 0 auto 15px;
-    }
-
-    .form-group label {
-        display: block;
-    }
-
-    .form-group input, .form-group textarea {
-        width: 100%; 
-        margin-bottom: 10px; 
-    }
-
-    .membership-tab-preview h2{
-        font-size: 16px;
-    }
-
-    .date-membership-preview{
-        flex-direction: column;
-    }
-    .save-btn, .cancel-btn {
-        width: 45%; 
-        margin: 5px;
-    }
-}
-
-
 @media(min-width: 868px) {
     .header_wrapper .cols_container{
         max-width: 1200px;
@@ -648,89 +536,70 @@ nav ul li.signup-btn:hover a{
 
 }
 
-
-@media (max-width: 425px) {
-    .main-width {
-        width: 98%; 
-        padding: 0 5px;
-    }
-
-    .logo-nav img {
-        width: 250px; 
-    }
-
-    nav ul li a {
-        margin-left: 30px; 
-    }
-
-    /* Profile Adjustments */
-    .header_wrapper .cols_container { 
-        grid-template-columns: 1fr; 
-        text-align: center; 
-    }
-
-    .left_col h2 {
-        font-size: 24px; 
-    }
-
-    .header_wrapper .cols_container .cover-img {
-        height: 220px; 
-    }
-
-    
-    .membership textarea {
-        width: 100%; 
-    }
-
-    .dates {
-        flex-direction: column; 
-    }
-
-    .date-membership h2{
-        font-size: 14px;
-        width: 80%;
-    }
-}
-
-@media (max-width: 320px) {
-    .main-width {
-        width: 100%; 
-        padding: 0; 
-    }
-
-    body {
-        font-size: 14px; 
-    }
-
-    .logo-nav img {
-        width: 200px;
-    }
-
-    /* Navigation Changes */
-    nav{ 
+@media (max-width: 480px) {
+    /* Navigation */
+    nav ul { 
         display: none; 
     }
 
-
-    /* Profile Adjustments */
-    .left_col {
-        max-width: 280px; 
+    
+    .header_wrapper .cols_container {
+        flex-direction: column; 
     }
 
-    .left_col h2 {
-        font-size: 16px; 
+    .add-post-links button{
+        margin-left: 150px;
     }
 
-    .left_col p {
-        font-size: 12px; 
+    .left_col, .right_col {
+        flex: 0 0 100%; 
+        margin: 10px 0; 
     }
 
-    .left_col .img_container img {
-        width: 80px;
-        height: 80px;
+    .cover-img, .logo-img {
+        width: 100%;
+        height: auto; 
     }
 
-    .membership-tab {
-        flex-direction: column;
-    } 
+    
+    .write-post-container, .post-container {
+        width: 100%;
+    }    
+
+    
+    .profile p, .org_content p {
+        font-size: 14px;
+    }
 }
+
+@media (max-width: 375px) {
+    body { 
+        font-size: 15px; 
+    } 
+
+    .main-width {
+        padding: 0 10px; 
+    }
+
+   
+    .left_col h2 {
+        font-size: 22px;
+    }
+
+    .add-post-links button{
+        margin-left: 120px;
+    }
+
+    .left_col .org_content p {
+        font-size: 13px; 
+    }
+
+    .join {
+        padding: 8px 20px; 
+    }
+
+    .post-text {
+        font-size: 14px; 
+    }
+}
+
